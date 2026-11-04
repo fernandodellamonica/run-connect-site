@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+<title id="title">Run Connect</title>
+<desc id="desc">Run Connect RC monogram in lime green on a dark navy background.</desc>
+<rect width="300" height="300" rx="48" fill="#102338"/>
+<rect x="24" y="24" width="252" height="252" rx="32" fill="#193b50" stroke="#35576b" stroke-width="2"/>
+<path d="M72 86h82c42 0 68 23 68 62 0 26-13 45-36 55l40 39h-57l-33-33h-17v33H72V86zm47 40v44h34c18 0 27-8 27-22s-9-22-27-22h-34z" fill="#c6f36b"/>
+<path d="M236 91v31c-10-7-21-10-34-10-28 0-47 18-47 45s19 45 47 45c13 0 24-3 34-10v31c-11 6-24 9-39 9-48 0-80-30-80-75s32-75 80-75c15 0 28 3 39 9z" fill="#fff" opacity=".96"/>
+</svg>
