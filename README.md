@@ -14,15 +14,14 @@ Static landing page and bilingual privacy-policy drafts for the Run Connect proj
 
 Both privacy pages are explicitly marked as drafts. Before publication, complete and verify all of the following:
 
-1. Replace the developer-identity placeholder with the responsible individual's correct legal name and confirm the public contact channel.
-2. Confirm the actual Supabase project hosting region and update the international-processing section.
-3. Audit the released Android build and repository for all data collected or transmitted, including device diagnostics, crash reporting, analytics, advertising, maps, and third-party SDKs. Add every relevant provider and purpose to the policy.
-4. Verify the exact cloud data fields transmitted, including activity summaries, splits, workout plans, route geometry, sync metadata, and any authentication data.
-5. Verify that the GPS privacy-zone behaviour in the released build matches the description in both policy pages.
-6. Define and test the account-deletion and data-rights request procedure, including Supabase Auth, related database records, local device copies, sync tombstones, and provider backups.
-7. Confirm applicable retention periods, including any backup or operational-log retention. Do not promise a deletion deadline until it is known and operationally supported.
-8. Confirm the legal basis for each processing purpose and the intended age range / rules for family use.
-9. Review the notices for applicable Brazilian privacy requirements (including LGPD). Obtain qualified legal advice where appropriate.
+1. Audit the released Android build and repository for all data collected or transmitted, including device diagnostics, crash reporting, analytics, advertising, maps, and third-party SDKs. Add every relevant provider and purpose to the policy.
+2. Verify the exact cloud data fields transmitted, including activity summaries, splits, workout plans, route geometry, sync metadata, and any authentication data.
+3. Verify that the GPS privacy-zone behaviour in the released build matches the description in both policy pages.
+4. Define and test the account-deletion and data-rights request procedure, including Supabase Auth, related database records, local device copies, sync tombstones, and provider backups.
+5. Confirm applicable retention periods, including any backup or operational-log retention. Do not promise a deletion deadline until it is known and operationally supported.
+6. Review the Supabase data processing agreement and verify the contractual mechanism and any onward-transfer terms applicable to international transfers to the United States.
+7. Confirm the legal basis for each processing purpose and the intended age range / rules for family use.
+8. Review the notices for applicable Brazilian privacy requirements (including LGPD and ANPD's international data-transfer regulation). Obtain qualified legal advice where appropriate.
 
 ## Garmin status
 
