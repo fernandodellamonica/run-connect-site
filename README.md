@@ -1,24 +1,28 @@
 # Run Connect public website
 
-Static landing page and privacy policy for the Run Connect project.
+Static landing page and bilingual privacy-policy drafts for the Run Connect project.
 
 ## Files
 
 - `index.html` — project landing page
-- `privacy.html` — privacy policy draft
-- `assets/style.css` — responsive styling
+- `privacy.html` — English privacy-policy draft
+- `privacy.pt-BR.html` — Brazilian Portuguese privacy-policy draft
+- `assets/style.css` — responsive styling (system fonts; no external font request)
 - `.nojekyll` — static publishing marker
 
-## Important: do not publish the Pages site yet
+## Important: do not enable GitHub Pages until the review is complete
 
-The privacy policy is intentionally marked as a draft. Before enabling GitHub Pages, complete and verify all of the following:
+Both privacy pages are explicitly marked as drafts. Before publication, complete and verify all of the following:
 
-1. Replace `[Insert developer's full legal name before publication]` with the responsible developer/data controller's correct legal name.
-2. Verify every description of data collection, GPS handling, privacy-zone processing, cloud synchronization, retention, and deletion against the currently released app and Supabase configuration.
-3. Confirm the Supabase hosting region and applicable international data-transfer information.
-4. Confirm the actual account and data deletion process, including backups and local device copies.
-5. Confirm the statements about advertising, data sale, children/family use, and service providers.
-6. Review the policy for applicable Brazilian privacy requirements (including LGPD), and obtain qualified legal advice where appropriate.
+1. Replace the developer-identity placeholder with the responsible individual's correct legal name and confirm the public contact channel.
+2. Confirm the actual Supabase project hosting region and update the international-processing section.
+3. Audit the released Android build and repository for all data collected or transmitted, including device diagnostics, crash reporting, analytics, advertising, maps, and third-party SDKs. Add every relevant provider and purpose to the policy.
+4. Verify the exact cloud data fields transmitted, including activity summaries, splits, workout plans, route geometry, sync metadata, and any authentication data.
+5. Verify that the GPS privacy-zone behaviour in the released build matches the description in both policy pages.
+6. Define and test the account-deletion and data-rights request procedure, including Supabase Auth, related database records, local device copies, sync tombstones, and provider backups.
+7. Confirm applicable retention periods, including any backup or operational-log retention. Do not promise a deletion deadline until it is known and operationally supported.
+8. Confirm the legal basis for each processing purpose and the intended age range / rules for family use.
+9. Review the notices for applicable Brazilian privacy requirements (including LGPD). Obtain qualified legal advice where appropriate.
 
 ## Garmin status
 
