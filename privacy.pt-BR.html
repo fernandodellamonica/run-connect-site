@@ -12,52 +12,60 @@
 <main class="legal">
   <small>RUN CONNECT · PRIVACIDADE</small>
   <h1>Política de Privacidade</h1>
-  <p class="lead">Esta política explica, em linguagem simples, quais informações o projeto Run Connect trata e por quê.</p>
-  <p class="date">Vigência: 3 de novembro de 2026</p>
+  <p class="lead">Esta política explica quais informações o Run Connect trata, como uma futura integração com o Garmin Connect utilizará dados de atividades e quais escolhas estarão disponíveis aos usuários.</p>
+  <p class="date">Vigência: 4 de novembro de 2026</p>
   <div class="language-links"><a href="privacy.pt-BR.html">Português (Brasil)</a><a href="privacy.html">English</a></div>
 
-  <h2>1. Sobre o Run Connect</h2>
+  <h2>1. Projeto e contato</h2>
   <p>O Run Connect é um projeto independente e não comercial de aprendizado e desenvolvimento, criado por Fernando Della Monica Pereira, desenvolvedor pessoa física residente no Brasil. Atualmente, destina-se ao uso pessoal e familiar.</p>
   <p>Contato sobre privacidade: <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
 
-  <h2>2. Informações tratadas pelo aplicativo</h2>
-  <p>Dependendo dos recursos utilizados, o Run Connect pode tratar:</p>
+  <h2>2. Informações tratadas pelo Run Connect</h2>
+  <p>Dependendo dos recursos utilizados, o Run Connect poderá tratar:</p>
   <ul>
-    <li><strong>Informações da conta:</strong> endereço de e-mail e identificadores de autenticação quando você cria uma conta ou entra no aplicativo.</li>
-    <li><strong>Atividades de corrida:</strong> data e horário, distância, duração, ritmo, velocidade, elevação, parciais e outros detalhes da atividade.</li>
-    <li><strong>Localização:</strong> coordenadas GPS coletadas durante a gravação de uma corrida e uma representação do percurso derivada dessas coordenadas.</li>
-    <li><strong>Treinos:</strong> planos de treino, etapas, metas e configurações de treinamento que você cria ou utiliza.</li>
-    <li><strong>Informações de sincronização:</strong> identificadores de registros, estado da sincronização, datas e marcadores técnicos utilizados para manter os dados locais e em nuvem consistentes.</li>
+    <li><strong>Informações da conta:</strong> endereço de e-mail e identificadores de autenticação usados para entrar e associar registros à conta correta do Run Connect.</li>
+    <li><strong>Informações de atividades gravadas pelo Run Connect:</strong> data e horário, tipo de atividade, distância, duração, ritmo, velocidade, elevação, parciais e informações de percurso GPS gravadas pelo aplicativo.</li>
+    <li><strong>Informações de atividades Garmin (após a integração ser ativada):</strong> detalhes de atividades disponibilizados pela Garmin por meio da Activity API, que podem incluir tipo de atividade, data e horário, distância, duração, métricas de desempenho e informações de percurso ou localização presentes nos dados fornecidos pela Garmin.</li>
+    <li><strong>Informações de treinos:</strong> treinos estruturados, etapas, metas e configurações de treinamento criados ou selecionados pelo usuário no Run Connect.</li>
+    <li><strong>Informações de integração e sincronização:</strong> identificadores de conta/API Garmin, permissões, identificadores de registros, estado da sincronização, datas e marcadores técnicos necessários para associar e sincronizar registros.</li>
   </ul>
 
-  <h2>3. Armazenamento local e sincronização em nuvem</h2>
-  <p>O Run Connect segue uma abordagem local-first. Os pontos GPS originais de uma atividade gravada são armazenados no dispositivo Android. A gravação básica de corridas foi projetada para funcionar sem conexão com a internet.</p>
-  <p>Quando você entra na conta e utiliza a sincronização em nuvem, determinadas informações da conta, atividades, parciais e treinos podem ser enviadas ao backend do Run Connect. Uma representação do percurso também pode ser sincronizada após o processamento das zonas de privacidade do aplicativo. A lista original de pontos GPS deve permanecer no dispositivo.</p>
-  <p>O processamento das zonas de privacidade é projetado para suprimir pontos do percurso próximos a áreas sensíveis configuradas, como o início e o fim de uma atividade. O percurso pode ser encurtado, dividido em segmentos ou omitido. Esse recurso reduz o nível de detalhe compartilhado, mas não garante que uma localização nunca possa ser inferida a partir de outras informações.</p>
+  <h2>3. Como os dados Garmin serão utilizados</h2>
+  <p>A integração com o Garmin Connect está em desenvolvimento e ainda não está ativa. Atualmente, o Run Connect não coleta dados de atividades Garmin nem os envia à Garmin por meio dessa integração.</p>
+  <p>Quando a integração estiver disponível, o usuário deverá escolher conectar sua conta Garmin Connect e autorizar as permissões solicitadas pelo fluxo de consentimento OAuth da Garmin. Os dados fornecidos pela Garmin por meio da Activity API serão associados à conta identificável daquele usuário no Run Connect, e não tratados como dados anônimos.</p>
+  <p>A Activity API será utilizada para importar as atividades Garmin do usuário para o histórico de atividades do Run Connect, exibir detalhes das atividades e apoiar os recursos de histórico e métricas de desempenho. O Starter da Garmin entrega os dados por Push e não inclui dados históricos; a integração processará os dados disponibilizados pela Garmin após a autorização da conexão pelo usuário.</p>
+  <p>A Training API será utilizada na direção oposta: o Run Connect poderá enviar treinos estruturados criados pelo usuário para a conta Garmin Connect desse usuário, permitindo a sincronização com dispositivos Garmin compatíveis. O conteúdo dos treinos não será vendido nem utilizado para publicidade.</p>
 
-  <h2>4. Prestadores de serviços</h2>
-  <p>O Run Connect utiliza o Supabase para autenticação de contas, armazenamento em banco de dados e sincronização em nuvem. A região primária do projeto Supabase é <strong>East US (North Virginia), Estados Unidos</strong>.</p>
-  <p>Este site é hospedado pelo GitHub Pages. O GitHub pode tratar informações técnicas sobre as requisições ao site, conforme seus próprios termos e documentação de privacidade.</p>
+  <h2>4. Armazenamento, privacidade de percursos e sincronização</h2>
+  <p>O Run Connect segue uma abordagem local-first. Os pontos GPS originais gravados pelo Run Connect são armazenados no dispositivo Android. A gravação básica de corridas foi projetada para funcionar sem conexão com a internet.</p>
+  <p>Se o usuário habilitar a sincronização em nuvem do Run Connect, determinadas informações de conta, atividades, parciais, treinos e integração poderão ser armazenadas no backend do Run Connect. As informações de percurso poderão ser simplificadas ou processadas pelas regras de privacidade antes de serem incluídas em um registro sincronizado. O recurso de zonas de privacidade foi projetado para suprimir pontos próximos a áreas sensíveis configuradas, como locais de início e fim da atividade. Um percurso poderá ser encurtado, dividido em segmentos ou omitido.</p>
+  <p>Os dados de atividades fornecidos pela Garmin serão processados somente na medida necessária para importar e exibir as atividades do usuário e fornecer os recursos descritos nesta política. Os campos exatos disponíveis dependem do conteúdo enviado pela API Garmin e das permissões concedidas pelo usuário.</p>
 
-  <h2>5. Garmin Connect</h2>
-  <p>O Run Connect está explorando uma integração oficial com o Garmin Connect, mas nenhuma integração Garmin está ativa neste momento. Atualmente, o aplicativo não envia informações de atividades ou de contas à Garmin. Caso uma integração seja aprovada e implementada, esta política será atualizada para explicar os dados envolvidos e as opções disponíveis aos usuários.</p>
-  <p>As informações que você fornece ao Run Connect são fornecidas ao projeto Run Connect, e não à Garmin. A Garmin não opera nem controla as informações tratadas pelo Run Connect.</p>
+  <h2>5. Serviços de terceiros e compartilhamento de dados</h2>
+  <p>O Run Connect identifica os seguintes serviços para a integração planejada:</p>
+  <ul>
+    <li><strong>Garmin Connect / Garmin Developer Program:</strong> parceiro de integração e fonte dos dados de atividades Garmin. A Garmin recebe a autorização do usuário por meio de seu próprio fluxo de consentimento. O Run Connect envia treinos estruturados criados pelo usuário ao Garmin Connect quando a Training API estiver habilitada.</li>
+    <li><strong>Supabase:</strong> fornecedor de backend para autenticação de contas, armazenamento em banco de dados e sincronização em nuvem. A região primária do projeto Supabase do Run Connect é East US (North Virginia), Estados Unidos. Quando a sincronização em nuvem estiver habilitada, determinadas informações de atividades derivadas da Garmin e vinculadas à conta poderão ser armazenadas ali para fornecer os recursos do Run Connect.</li>
+    <li><strong>GitHub Pages:</strong> hospeda somente este site estático do projeto. Não se destina a receber ou processar dados de atividades Garmin.</li>
+  </ul>
+  <p>O Run Connect <strong>não vende</strong> dados de atividades Garmin nem outras informações pessoais. As informações derivadas da Garmin não são compartilhadas com terceiros para publicidade, marketing ou finalidades comerciais independentes desses terceiros. O Supabase processa determinadas informações como prestador de serviços em nome do Run Connect.</p>
+  <p>Atualmente, não está previsto o uso de serviços de analytics, publicidade, aprendizado de máquina ou inteligência artificial de terceiros para processar dados derivados da Garmin.</p>
 
-  <h2>6. Como as informações são utilizadas</h2>
-  <p>As informações são utilizadas para gravar e exibir corridas, apresentar métricas e histórico de atividades, gerenciar treinos, autenticar contas, sincronizar informações entre o aplicativo e seu backend e manter a consistência dos dados.</p>
-  <p>O Run Connect é um projeto não comercial de aprendizado. Atualmente, não é oferecido como serviço sustentado por publicidade nem como produto por assinatura paga.</p>
+  <h2>6. Inteligência artificial e processamento automatizado</h2>
+  <p>O Run Connect atualmente não utiliza sistemas de inteligência artificial, modelos de aprendizado de máquina ou serviços de IA generativa para analisar dados derivados da Garmin, treinar, avaliar ou aprimorar modelos com esses dados. Caso isso mude, esta política será atualizada antes da introdução do recurso, e os usuários receberão um aviso claro e uma opção apropriada antes que seus dados Garmin sejam processados por tal sistema.</p>
 
-  <h2>7. Suas escolhas e solicitações</h2>
-  <p>A coleta de GPS está associada à gravação de uma atividade de corrida e depende da permissão de localização correspondente no Android. Você pode gerenciar as permissões do aplicativo nas configurações do Android.</p>
-  <p>As informações de atividades armazenadas localmente podem ser gerenciadas no dispositivo utilizando os recursos disponíveis no aplicativo e os controles de armazenamento do Android. As informações na nuvem são separadas das cópias locais. Para tirar dúvidas ou solicitar acesso, correção ou exclusão de informações em nuvem associadas à conta, entre em contato pelo endereço <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>, utilizando o e-mail associado à conta.</p>
+  <h2>7. Escolhas do usuário, acesso e solicitações sobre dados</h2>
+  <p>A conexão com a Garmin é opcional. Antes de qualquer troca de dados Garmin, o usuário deverá autorizar a conexão e as permissões solicitadas. O usuário poderá retirar as permissões de compartilhamento Garmin por meio de sua conta Garmin Connect. Quando a integração for disponibilizada, o Run Connect fornecerá uma opção para desconectar a conta Garmin no aplicativo.</p>
+  <p>O usuário poderá solicitar acesso, correção ou exclusão de informações associadas à conta, bem como solicitar uma cópia ou exportação de suas informações, enviando um e-mail para <a href="mailto:runconnect@proton.me">runconnect@proton.me</a> a partir do endereço associado à conta Run Connect. As solicitações serão verificadas quando razoavelmente necessário. As permissões de localização do Android também podem ser gerenciadas nas configurações do sistema.</p>
+  <p>Quando uma conexão Garmin for desconectada ou o consentimento for retirado, o Run Connect deixará de solicitar novos dados Garmin daquela conexão. O usuário poderá solicitar separadamente a exclusão dos registros derivados da Garmin que já estejam armazenados no Run Connect. Cópias locais no dispositivo e cópias em nuvem são separadas e poderão precisar ser gerenciadas separadamente.</p>
 
-  <h2>8. Armazenamento e segurança</h2>
-  <p>As informações de atividades armazenadas localmente permanecem no dispositivo até serem apagadas pelo aplicativo ou até que os dados correspondentes do dispositivo sejam removidos. As informações em nuvem são mantidas enquanto forem necessárias para fornecer os recursos de conta e sincronização. Marcadores técnicos de sincronização podem ser utilizados para impedir que registros excluídos reapareçam em uma sincronização posterior.</p>
-  <p>São utilizadas medidas técnicas razoáveis para proteger as informações, mas nenhum dispositivo, rede ou método de armazenamento pode ter segurança total garantida. A exclusão de informações em nuvem não apaga automaticamente uma cópia separada que permaneça no dispositivo.</p>
+  <h2>8. Retenção e segurança</h2>
+  <p>As informações de atividades armazenadas localmente permanecem no dispositivo até serem apagadas pelo aplicativo ou até que os dados correspondentes do dispositivo sejam removidos. As informações em nuvem são mantidas enquanto forem necessárias para fornecer os recursos de conta e sincronização, salvo quando houver uma solicitação válida de exclusão. Marcadores técnicos de sincronização poderão ser utilizados para impedir que registros apagados reapareçam em uma sincronização posterior.</p>
+  <p>O Run Connect utiliza controles de acesso por conta e medidas técnicas razoáveis destinadas a proteger as informações. Nenhum dispositivo, rede ou método de armazenamento pode ter segurança total garantida. A exclusão de informações em nuvem não apaga automaticamente uma cópia separada que permaneça no dispositivo.</p>
 
   <h2>9. Alterações e contato</h2>
-  <p>Esta política poderá ser atualizada conforme o desenvolvimento do projeto ou caso suas práticas de tratamento de informações sejam alteradas. A versão atual ficará disponível neste endereço.</p>
-  <p>Para dúvidas sobre o Run Connect ou esta política, entre em contato pelo endereço <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
+  <p>Esta política será atualizada se a integração Garmin for ativada ou se as práticas de tratamento de dados ou os prestadores de serviço do projeto forem alterados. A versão atual ficará disponível neste endereço.</p>
+  <p>Para dúvidas ou solicitações relacionadas à privacidade, entre em contato pelo endereço <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
   <p class="date">Run Connect · Projeto independente de aprendizado · Brasil</p>
 </main>
 <footer><a class="brand" href="./"><b>RC</b> Run Connect</a><span><a href="index.html">Início</a> · <a href="privacy.html">English</a> · <a href="mailto:runconnect@proton.me">Contato</a></span><small>© 2026 Run Connect</small></footer>
