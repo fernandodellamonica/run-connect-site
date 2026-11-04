@@ -12,52 +12,60 @@
 <main class="legal">
   <small>RUN CONNECT · PRIVACY</small>
   <h1>Privacy Policy</h1>
-  <p class="lead">This policy explains, in plain language, what information the Run Connect project handles and why.</p>
-  <p class="date">Effective date: November 3, 2026</p>
+  <p class="lead">This policy explains what information Run Connect handles, how a future Garmin Connect integration will use activity data, and the choices available to users.</p>
+  <p class="date">Effective date: November 4, 2026</p>
   <div class="language-links"><a href="privacy.html">English</a><a href="privacy.pt-BR.html">Português (Brasil)</a></div>
 
-  <h2>1. About Run Connect</h2>
+  <h2>1. Project and contact</h2>
   <p>Run Connect is an independent, non-commercial learning and development project created by Fernando Della Monica Pereira, an individual developer based in Brazil. It is currently intended for personal and family use.</p>
   <p>Privacy contact: <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
 
-  <h2>2. Information handled by the app</h2>
-  <p>Depending on the features you use, Run Connect may handle:</p>
+  <h2>2. Information handled by Run Connect</h2>
+  <p>Depending on the features used, Run Connect may handle:</p>
   <ul>
-    <li><strong>Account information:</strong> email address and authentication identifiers when you create an account or sign in.</li>
-    <li><strong>Running activities:</strong> date and time, distance, duration, pace, speed, elevation, splits, and related activity details.</li>
-    <li><strong>Location:</strong> GPS coordinates collected while you record a run, and a route representation derived from those coordinates.</li>
-    <li><strong>Workouts:</strong> workout plans, steps, targets, and training settings you create or use.</li>
-    <li><strong>Synchronization information:</strong> record identifiers, sync status, timestamps, and technical markers used to keep devices and cloud records consistent.</li>
+    <li><strong>Account information:</strong> email address and authentication identifiers used to sign in and associate records with the correct Run Connect account.</li>
+    <li><strong>Run Connect activity information:</strong> activity date and time, activity type, distance, duration, pace, speed, elevation, splits, and GPS route information recorded by the app.</li>
+    <li><strong>Garmin activity information (after the integration is enabled):</strong> activity details made available by Garmin through the Activity API, which may include activity type, date and time, distance, duration, performance metrics, and route or location details contained in the data Garmin provides.</li>
+    <li><strong>Workout information:</strong> structured workouts, steps, targets, and training settings created or selected by the user in Run Connect.</li>
+    <li><strong>Integration and synchronization information:</strong> Garmin account/API identifiers, permissions, record identifiers, synchronization status, timestamps, and technical markers needed to associate and synchronize records.</li>
   </ul>
 
-  <h2>3. Local storage and cloud synchronization</h2>
-  <p>Run Connect follows a local-first approach. Raw GPS trackpoints from a recorded activity are stored on the Android device. Core run recording is designed to work without an internet connection.</p>
-  <p>If you sign in and use cloud synchronization, selected account, activity, split, and workout information may be sent to the Run Connect backend. A route representation may also be synchronized after the app's privacy-zone processing. The original raw GPS trackpoint list is intended to remain on the device.</p>
-  <p>Privacy-zone processing is designed to suppress route points around configured sensitive areas, such as the start and finish of an activity. A route may be shortened, split into segments, or omitted. This feature reduces the detail shared in a route; it cannot guarantee that a location will never be inferred from other information.</p>
+  <h2>3. How Garmin data will be used</h2>
+  <p>Garmin Connect integration is under development and is not currently active. No Garmin activity data is currently collected by Run Connect or sent to Garmin through this integration.</p>
+  <p>When the integration becomes available, a user will first choose to connect their Garmin Connect account and authorize the requested permissions through Garmin's OAuth consent process. Garmin Activity API data will then be associated with that identifiable user's Run Connect account, not treated as anonymous data.</p>
+  <p>The Activity API will be used to import the user's Garmin activities into their Run Connect activity history, display activity details, and support running history and performance features. Garmin's Starter Access delivers data by push and does not include historical data; the integration will process data made available by Garmin after the user's connection is authorized.</p>
+  <p>The Training API will be used in the opposite direction: Run Connect may send structured workouts created by the user to that user's Garmin Connect account so they can be synchronized to compatible Garmin devices. Workout content is not sold or used for advertising.</p>
 
-  <h2>4. Service providers</h2>
-  <p>Run Connect uses Supabase for account authentication, database storage, and cloud synchronization. The project's primary Supabase region is <strong>East US (North Virginia), United States</strong>.</p>
-  <p>This website is hosted using GitHub Pages. GitHub may process technical information about website requests under its own terms and privacy documentation.</p>
+  <h2>4. Storage, route privacy, and synchronization</h2>
+  <p>Run Connect follows a local-first approach. Raw GPS trackpoints recorded by Run Connect are stored on the Android device. Core run recording is designed to work without an internet connection.</p>
+  <p>If the user enables Run Connect cloud synchronization, selected account, activity, split, workout, and integration information may be stored in the Run Connect backend. Route information may be simplified or privacy-processed before it is included in a synchronized record. The app's privacy-zone feature is designed to suppress route points around configured sensitive areas, such as activity start and finish locations. A route may be shortened, split into segments, or omitted.</p>
+  <p>Garmin-provided activity data will be processed only as needed to import and display the user's activities and provide the features described in this policy. The exact fields available depend on the Garmin API payload and the permissions granted by the user.</p>
 
-  <h2>5. Garmin Connect</h2>
-  <p>Run Connect is exploring an official Garmin Connect integration, but no Garmin integration is currently active. The app is not currently sending activity or account information to Garmin. If an integration is approved and implemented, this policy will be updated to explain the data exchanged and the choices available to users.</p>
-  <p>Information you provide to Run Connect is provided to the Run Connect project, not to Garmin. Garmin does not operate or control the information handled by Run Connect.</p>
+  <h2>5. Third-party services and data sharing</h2>
+  <p>Run Connect identifies the following services for the planned integration:</p>
+  <ul>
+    <li><strong>Garmin Connect / Garmin Developer Program:</strong> the integration partner and source of Garmin activity data. Garmin receives user authorization through its own consent flow. Run Connect sends user-created structured workouts to Garmin Connect when the Training API is enabled.</li>
+    <li><strong>Supabase:</strong> the backend provider for account authentication, database storage, and cloud synchronization. The Run Connect Supabase project's primary region is East US (North Virginia), United States. If cloud synchronization is enabled, selected Garmin-derived activity and account-linked information may be stored there to provide Run Connect features.</li>
+    <li><strong>GitHub Pages:</strong> hosts this static project website only. It is not intended to receive or process Garmin activity data.</li>
+  </ul>
+  <p>Run Connect does <strong>not</strong> sell Garmin activity data or other personal information. Garmin-derived information is not shared with third parties for their own advertising, marketing, or independent commercial purposes. Supabase processes selected information as a service provider on behalf of Run Connect.</p>
+  <p>No third-party analytics, advertising, machine-learning, or AI service is currently planned to process Garmin-derived data.</p>
 
-  <h2>6. How information is used</h2>
-  <p>Information is used to record and display runs, show activity metrics and history, manage workouts, authenticate accounts, synchronize information between the app and its backend, and maintain data consistency.</p>
-  <p>Run Connect is a non-commercial learning project. It is not currently offered as an advertising-supported service or a paid subscription product.</p>
+  <h2>6. AI and automated processing</h2>
+  <p>Run Connect does not currently use AI systems, machine-learning models, or generative AI services to analyze, train on, evaluate, or improve models using Garmin-derived data. If this changes, this policy will be updated before the feature is introduced, and users will receive a clear notice and an appropriate choice before their Garmin data is processed by such a system.</p>
 
-  <h2>7. Your choices and requests</h2>
-  <p>GPS collection is associated with recording a running activity and requires the relevant Android location permission. You can manage app permissions through Android settings.</p>
-  <p>Activity information stored locally can be managed on the device using the app's available features and Android storage controls. Cloud information is separate from local device copies. To ask a question or request access to, correction of, or deletion of account-associated cloud information, contact <a href="mailto:runconnect@proton.me">runconnect@proton.me</a> from the email associated with your account.</p>
+  <h2>7. User choices, access, and data requests</h2>
+  <p>Connecting Garmin is optional. Users will be asked to authorize the connection and the requested data permissions before any Garmin data is exchanged. Users may withdraw Garmin sharing permissions through their Garmin Connect account. Run Connect will provide a way to disconnect the Garmin account in the app when the integration is released.</p>
+  <p>Users may request access to, correction of, or deletion of account-associated information, and may request an export or copy of their information, by emailing <a href="mailto:runconnect@proton.me">runconnect@proton.me</a> from the email associated with their Run Connect account. Requests will be verified as reasonably necessary. Users may also manage Android location permissions through Android settings.</p>
+  <p>When a Garmin connection is disconnected or consent is withdrawn, Run Connect will stop requesting new Garmin data for that connection. The user may separately request deletion of Garmin-derived records already stored in Run Connect. Local device copies and cloud copies are separate and may need to be managed separately.</p>
 
-  <h2>8. Storage and security</h2>
-  <p>Local activity information remains on the device until it is deleted through the app or the relevant device data is removed. Cloud information is kept while needed to provide account and synchronization features. Technical synchronization markers may be used to ensure that deleted records do not reappear during a later sync.</p>
-  <p>Reasonable technical measures are used to protect information, but no device, network, or storage method can be guaranteed to be completely secure. Deleting cloud information does not automatically delete a separate copy that remains on a device.</p>
+  <h2>8. Retention and security</h2>
+  <p>Local activity information remains on the device until it is deleted through the app or the relevant device data is removed. Cloud information is retained while needed to provide account and synchronization features, unless a valid deletion request is received. Technical synchronization markers may be used to prevent deleted records from reappearing during a later sync.</p>
+  <p>Run Connect uses account-based access controls and reasonable technical measures intended to protect information. No device, network, or storage method can be guaranteed to be completely secure. Deleting cloud information does not automatically delete a separate copy that remains on a device.</p>
 
   <h2>9. Changes and contact</h2>
-  <p>This policy may be updated as the project develops or if its data practices change. The current version will be made available at this URL.</p>
-  <p>For questions about Run Connect or this policy, contact <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
+  <p>This policy will be updated if the Garmin integration is activated or if the project's data practices or service providers change. The current version will be available at this URL.</p>
+  <p>For questions or privacy requests, contact <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
   <p class="date">Run Connect · Independent learning project · Brazil</p>
 </main>
 <footer><a class="brand" href="./"><b>RC</b> Run Connect</a><span><a href="index.html">Home</a> · <a href="privacy.pt-BR.html">Português</a> · <a href="mailto:runconnect@proton.me">Contact</a></span><small>© 2026 Run Connect</small></footer>
