@@ -12,74 +12,53 @@
 <main class="legal">
   <small>RUN CONNECT · PRIVACY</small>
   <h1>Privacy Policy</h1>
-  <p class="lead">This notice describes how Run Connect is designed to handle information in the Android application and on this project website.</p>
-  <p class="date">Draft for review · Last reviewed: November 3, 2026</p>
+  <p class="lead">This policy explains, in plain language, what information the Run Connect project handles and why.</p>
+  <p class="date">Effective date: November 3, 2026</p>
   <div class="language-links"><a href="privacy.html">English</a><a href="privacy.pt-BR.html">Português (Brasil)</a></div>
-  <aside class="draft-warning"><strong>NOT READY FOR PUBLICATION.</strong> The responsible developer and primary Supabase region have been identified. The exact diagnostics/SDK inventory, deletion workflow, retention details, and international-transfer contractual mechanism still need verification. Do not use this draft as the published privacy policy yet.</aside>
 
-  <h2>1. Who is responsible for Run Connect?</h2>
-  <p>Run Connect is an independent, non-commercial software project currently developed for personal and family use. It is not currently offered as a commercial subscription service or operated through a registered company.</p>
-  <p><strong>Controller / responsible developer:</strong> Fernando Della Monica Pereira, an individual based in Brazil.</p>
-  <p><strong>Privacy contact:</strong> <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
+  <h2>1. About Run Connect</h2>
+  <p>Run Connect is an independent, non-commercial learning and development project created by Fernando Della Monica Pereira, an individual developer based in Brazil. It is currently intended for personal and family use.</p>
+  <p>Privacy contact: <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
 
-  <h2>2. Information the app handles</h2>
-  <p>Depending on the features you use and the permissions you grant, Run Connect may process the following categories:</p>
+  <h2>2. Information handled by the app</h2>
+  <p>Depending on the features you use, Run Connect may handle:</p>
   <ul>
-    <li><strong>Account and authentication information:</strong> account email address and authentication identifiers used to sign in and associate cloud records with the correct account.</li>
-    <li><strong>Running activity information:</strong> activity date and time, distance, duration, pace, speed, elevation, splits, activity identifiers, and related workout results.</li>
-    <li><strong>Location information:</strong> GPS coordinates collected while a run is being recorded, plus a route representation derived from those coordinates for supported cloud-sync features.</li>
-    <li><strong>Workout information:</strong> workout plans, steps, targets, and training settings that you create or use.</li>
-    <li><strong>Synchronization information:</strong> record identifiers, sync status, timestamps, and deletion markers needed to synchronize changes and prevent deleted records from reappearing.</li>
+    <li><strong>Account information:</strong> email address and authentication identifiers when you create an account or sign in.</li>
+    <li><strong>Running activities:</strong> date and time, distance, duration, pace, speed, elevation, splits, and related activity details.</li>
+    <li><strong>Location:</strong> GPS coordinates collected while you record a run, and a route representation derived from those coordinates.</li>
+    <li><strong>Workouts:</strong> workout plans, steps, targets, and training settings you create or use.</li>
+    <li><strong>Synchronization information:</strong> record identifiers, sync status, timestamps, and technical markers used to keep devices and cloud records consistent.</li>
   </ul>
-  <p>The exact device diagnostics, crash reports, and optional third-party software libraries included in each app release must be checked against that release before this notice is finalized.</p>
 
-  <h2>3. Location, local storage, and route privacy</h2>
-  <p>Run Connect is designed with a local-first approach. During activity recording, GPS trackpoints are stored locally on the Android device. Core run recording is designed to work without an internet connection.</p>
-  <p>When you sign in and enable cloud synchronization, selected activity information, splits, and workout information may be synchronized with the Run Connect backend. The current design keeps the raw GPS trackpoint list on the device. Where a route is synchronized, the app is designed to send a derived route representation after privacy-zone processing, rather than the original raw trackpoint list.</p>
-  <p>The app's geographic privacy processing is intended to suppress route points around configured sensitive areas, including activity start and finish areas. A route may consequently be shortened, split into segments, or omitted. Route masking reduces exposure but cannot guarantee that a person's location will never be inferred from other information.</p>
-  <p>Location access is used for recording running routes. Android permission controls can be used to manage location access; denying location access may prevent GPS activity recording from working as intended.</p>
+  <h2>3. Local storage and cloud synchronization</h2>
+  <p>Run Connect follows a local-first approach. Raw GPS trackpoints from a recorded activity are stored on the Android device. Core run recording is designed to work without an internet connection.</p>
+  <p>If you sign in and use cloud synchronization, selected account, activity, split, and workout information may be sent to the Run Connect backend. A route representation may also be synchronized after the app's privacy-zone processing. The original raw GPS trackpoint list is intended to remain on the device.</p>
+  <p>Privacy-zone processing is designed to suppress route points around configured sensitive areas, such as the start and finish of an activity. A route may be shortened, split into segments, or omitted. This feature reduces the detail shared in a route; it cannot guarantee that a location will never be inferred from other information.</p>
 
-  <h2>4. Cloud services and service providers</h2>
-  <p>Run Connect uses Supabase for backend functions including authentication, database storage, and cloud synchronization. Supabase processes information on behalf of the project to provide those services.</p>
-  <p>The Run Connect Supabase project is configured in the East US (North Virginia), United States region. The primary project data stored through Supabase is therefore hosted in the United States. Supabase's own terms, privacy documentation, data processing agreement, and information about its subprocessors also apply to its processing. The exact contractual mechanism relied on for international transfers must be reviewed and confirmed before this notice is finalized.</p>
-  <p>This project website is intended to be a static site hosted by GitHub Pages. GitHub may process ordinary technical information about website requests under its own privacy terms. The website does not currently include advertising tags, embedded analytics, contact forms, or third-party font imports.</p>
+  <h2>4. Service providers</h2>
+  <p>Run Connect uses Supabase for account authentication, database storage, and cloud synchronization. The project's primary Supabase region is <strong>East US (North Virginia), United States</strong>.</p>
+  <p>This website is hosted using GitHub Pages. GitHub may process technical information about website requests under its own terms and privacy documentation.</p>
 
-  <h2>5. Garmin and other integrations</h2>
-  <p>Official Garmin Connect integration is not currently available in Run Connect. The app does not currently offer a live Garmin account connection. If an integration is implemented in the future, this policy will be updated before release to describe the information involved, the authorization process, and the relevant service providers.</p>
+  <h2>5. Garmin Connect</h2>
+  <p>Run Connect is exploring an official Garmin Connect integration, but no Garmin integration is currently active. The app is not currently sending activity or account information to Garmin. If an integration is approved and implemented, this policy will be updated to explain the data exchanged and the choices available to users.</p>
+  <p>Information you provide to Run Connect is provided to the Run Connect project, not to Garmin. Garmin does not operate or control the information handled by Run Connect.</p>
 
-  <h2>6. Why information is processed</h2>
-  <p>Information is processed to record and display running activities, calculate or present activity metrics, manage workouts, authenticate accounts, synchronize records, preserve data consistency, and maintain the security and operation of the app.</p>
-  <p>The specific legal basis applicable to each processing purpose must be confirmed as part of the final privacy review. Where a feature relies on a device permission or a consent choice, you can manage that permission or choice through the relevant app or Android controls, subject to the technical requirements of the feature.</p>
+  <h2>6. How information is used</h2>
+  <p>Information is used to record and display runs, show activity metrics and history, manage workouts, authenticate accounts, synchronize information between the app and its backend, and maintain data consistency.</p>
+  <p>Run Connect is a non-commercial learning project. It is not currently offered as an advertising-supported service or a paid subscription product.</p>
 
-  <h2>7. When information is shared</h2>
-  <p>Cloud information is shared with Supabase as needed to provide the backend services described above. Run Connect does not currently provide a public activity feed or public profile feature. No Garmin data exchange is currently active through the app.</p>
-  <p>Information may also be disclosed where required by law or where necessary to respond to a valid legal request or protect the security of users and the project.</p>
+  <h2>7. Your choices and requests</h2>
+  <p>GPS collection is associated with recording a running activity and requires the relevant Android location permission. You can manage app permissions through Android settings.</p>
+  <p>Activity information stored locally can be managed on the device using the app's available features and Android storage controls. Cloud information is separate from local device copies. To ask a question or request access to, correction of, or deletion of account-associated cloud information, contact <a href="mailto:runconnect@proton.me">runconnect@proton.me</a> from the email associated with your account.</p>
 
-  <h2>8. Storage, retention, and deletion</h2>
-  <p>Activity records and raw GPS trackpoints stored only on your device remain there until they are deleted in the app or the relevant device data is removed. Cloud-synchronized records are stored in the Run Connect backend while needed to provide account and synchronization features.</p>
-  <p>Synchronization may use deletion markers so that a record deleted on one device is not recreated by another device during a later sync. Such technical markers are not the same as the original activity content.</p>
-  <p>You may send a privacy or deletion request to <a href="mailto:runconnect@proton.me">runconnect@proton.me</a> using the email address associated with your account. A request may need to be verified. Deleting cloud information does not automatically erase a separate copy that remains on your Android device.</p>
-  <p>The exact process for deleting an account and all associated cloud records, including any backup retention periods, must be verified and documented before general publication. No fixed deletion deadline is promised in this draft.</p>
+  <h2>8. Storage and security</h2>
+  <p>Local activity information remains on the device until it is deleted through the app or the relevant device data is removed. Cloud information is kept while needed to provide account and synchronization features. Technical synchronization markers may be used to ensure that deleted records do not reappear during a later sync.</p>
+  <p>Reasonable technical measures are used to protect information, but no device, network, or storage method can be guaranteed to be completely secure. Deleting cloud information does not automatically delete a separate copy that remains on a device.</p>
 
-  <h2>9. Your privacy rights</h2>
-  <p>Depending on applicable law and the circumstances of the processing, you may request confirmation of processing, access to your personal information, correction of incomplete or inaccurate information, anonymization, blocking or deletion, information about sharing, and portability where applicable. You may also withdraw consent where consent is the applicable legal basis.</p>
-  <p>To make a request, contact <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>. Please describe the request and identify the account concerned. The project may ask for reasonable information to verify that the request comes from the relevant person or their authorized representative.</p>
-
-  <h2>10. Security</h2>
-  <p>Run Connect uses account-based access controls and backend security policies intended to restrict access to cloud records. Reasonable technical and organizational measures are used to protect information, but no device, network, or storage method can be guaranteed to be completely secure.</p>
-
-  <h2>11. Family use and minors</h2>
-  <p>Run Connect is currently a personal and family project, not a service designed specifically for children. A parent or legal guardian should supervise any use by a minor and assess whether the collection of account or location information is appropriate. This section must be reviewed against the actual intended age range before publication.</p>
-
-  <h2>12. International processing</h2>
-  <p>The Run Connect Supabase project's primary region is East US (North Virginia), United States. When you use account and cloud-sync features, the information described in this policy may be transferred electronically from Brazil to and stored in the United States for authentication, database storage, and synchronization. The transfer's specific contractual mechanism and any relevant onward transfers through the provider's subprocessors must be confirmed against the applicable Supabase agreements before publication. The selected project region identifies the primary project-data location; it should not be read as a guarantee that every provider operation or subprocessor processing is restricted to that location.</p>
-
-  <h2>13. Changes to this notice</h2>
-  <p>This notice may be updated when app features, service providers, or data practices change. The last-reviewed date will be updated when a revised version is published.</p>
-
-  <h2>14. Contact</h2>
-  <p>For questions or requests about personal information, contact <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
-  <p class="date">Run Connect · Independent project · Brazil</p>
+  <h2>9. Changes and contact</h2>
+  <p>This policy may be updated as the project develops or if its data practices change. The current version will be made available at this URL.</p>
+  <p>For questions about Run Connect or this policy, contact <a href="mailto:runconnect@proton.me">runconnect@proton.me</a>.</p>
+  <p class="date">Run Connect · Independent learning project · Brazil</p>
 </main>
 <footer><a class="brand" href="./"><b>RC</b> Run Connect</a><span><a href="index.html">Home</a> · <a href="privacy.pt-BR.html">Português</a> · <a href="mailto:runconnect@proton.me">Contact</a></span><small>© 2026 Run Connect</small></footer>
 </body>
